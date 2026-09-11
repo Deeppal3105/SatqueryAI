@@ -1,0 +1,48 @@
+# Node / React
+node_modules/
+frontend/node_modules/
+# frontend/dist/
+*.log
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+ENV/
+env/
+
+# Environment Variables & IDE
+.env
+.env.local
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Ingested upload rasters & test artifacts
+app/static/uploads/*.tif
+app/static/uploads/*.png
+app/static/uploads/*.jpg
+app/static/uploads/*.geotiff
+app/static/uploads/cdse_products/
+app/static/uploads/bhoonidhi_downloads/
+app/static/uploads/test_*/
+app/static/uploads/real_validation/
+app/static/uploads/sih_materialized/
+
+# Model Checkpoints & Large Weights (exceeds GitHub 100MB limit)
+*.safetensors
+*.pt
+*.bin
+*.pth
+*.ckpt
+*.onnx
+checkpoints/**/model.safetensors
+checkpoints/**/optimizer.pt
+
